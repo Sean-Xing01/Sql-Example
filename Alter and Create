@@ -1,0 +1,37 @@
+#DDL command
+#Create Table======================================
+#syntax Create TABLE <table_name>
+(column_1 datatype optional_parameters,
+column_2 datatype optional_parameters,
+xxxxxx xxxxxx xxxxxx
+)
+#Example
+CREATE TABLE provinces(
+id char(2) PRIMARY KEY NOT NULL,
+name varchar(24),
+year varchar(4)
+)
+#Create Table======================================
+#Alter table=======================================
+# Example 1 Add columns
+Alter TABLE <Table Name> 
+        #ADD Column <Column_Name> <datatype>:
+        
+# Example 2 Remove columns
+Alter TABLE <Table_Name>
+    Drop column <column_name>
+    
+# Example 3 Alter column
+Alter TABLE <table_name>
+  alter column <column_name> set DATA TYPE CHAR(20)
+#Alter table========================================
+
+#Drop table========================================
+#Example 1
+ Drop table <table_name>
+#Drop table========================================
+
+#TRUNCATE table=====================================
+# Clean off the table
+TRUNCATE table <table_name> IMMEDIATE;
+#TRUNCATE table=====================================
